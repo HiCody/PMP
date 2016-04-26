@@ -1,0 +1,33 @@
+//
+//  WebInterface.h
+//  PMP
+//
+//  Created by mac on 15/12/3.
+//  Copyright © 2015年 mac. All rights reserved.
+//
+
+#ifndef WebInterface_h
+#define WebInterface_h
+
+//登陆
+#define kLoginCheck @"http://192.168.1.31:8080/ loginCheck"
+
+//所有问题列表(分页)(State: -1:全部 1: 未发现问题  2：待复查  3：复查未通过 4：复查通过)
+#define kCheckResultInterface @"http://192.168.1.31:8080/security/check/queryCheckInfoByStateOrUserId"
+
+//检查问题
+#define kCheckResultDetailInfoInterface @"http://192.168.1.31:8080/security/check/checkResultDetailInfo"
+
+//问题图片上传
+#define kUploadFileByHttpInterface @"http://192.168.1.31:8080/security/check/uploadFileByHttp"
+
+//检查问题上传
+#define kAddCheckInfoInterface @"http://192.168.1.31:8080/security/check/addCheckInfo"
+
+//复查问题
+#define  kAddRecheckInfoInterface @"http://192.168.1.31:8080/security/check/addRecheckInfo"
+
+//安全管理图片列表查询
+#define kSecurityManagementPictureListInterface @"http://192.168.1.31:8080/security/check/queryUploadFileListByMenuIdAndFileType"
+
+#endif /* WebInterface_h */

@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  PMP
+//
+//  Created by mac on 15/11/30.
+//  Copyright © 2015年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define WinWidth [UIScreen mainScreen].bounds.size.width
+#define WinHeight [UIScreen mainScreen].bounds.size.height
+
+#define W(x) WinWidth*x/375.0
+#define H(y) WinHeight*y/667.0
+
+#import "UserInfo.h"
+
+//category
+#import "UIView+Frame.h"
+#import "UIColor+HEX.h"
+
+//Macros
+#import "NotificationMacros.h"
+#import "ColorMacros.h"
+#import "WebInterface.h"
+#import "InfoMacros.h"
+
+//Vendor
+#import <MJRefresh.h>
+#import <MJExtension.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <MBProgressHUD.h>
+#import <AFNetworking.h>
+#import "MBProgressHUD+MJ.h"
+#endif /* PrefixHeader_pch */
